@@ -1,31 +1,148 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Belajar HTML</title>
-    </head>
-    <body>
-        <h1>HAI NAMA SAYA ANTONIUS DION</h1>
-        <br>
 
-        <ul>
-            <li><a href="#profil">PROFIL SINGKAT</a></li>
-            <li><a href="#bidodata">BIODATA</a></li>
-            <li><a href="#pendidilan">RIWAYAT PENDIDIKAN</a></li>
-            <li><a href="#hobi">HOBI</a></li>
-            <li><a href="kontak">KONTAK</a></li>
-        </ul>
-        <br>
+<head>git
+    <title>Belajar HTML</title>
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!-- <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
     
-        <h2 id="profil">Profil singkat</h2>
-        <img src="images/profic.jpg" alt="profic" width="200">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, perspiciatis iste, totam exercitationem non eos ea in aut, minus quidem tenetur eum minima magnam dolores ipsum quod? Adipisci, nobis illo.</p>
+        td,
+        th {
+    
+            text-align: left;
+            padding: 7px;
+        }
+    
+    
+    
+        .table-solid td,
+        .table-solid th {
+            border: 1px solid black
+        }
+    
+        .table-dotted td,
+        .table-dotted th {
+            border: 1px dotted black
+        }
+    </style> -->
+</head>
+
+<body>
+    <body style="background-color:white;"></body>
+    <h1>HAI NAMA SAYA ANTONIUS DION</h1>
+    <br>
+
+    <ul>
+        <li><a href="#profil">PROFIL SINGKAT</a></li>
+        <li><a href="#bidodata">BIODATA</a></li>
+        <li><a href="#pendidilan">RIWAYAT PENDIDIKAN</a></li>
+        <li><a href="#hobi">HOBI</a></li>
+        <li><a href="kontak">KONTAK</a></li>
+    </ul>
+    <br>
+
+    <h2 id="profil">Profil Singkat</h2>
+    <img src="images/profic.jpg" alt="profic" width="200">
+    <p style="column-count: 5; column-count: 300px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, perspiciatis iste, totam exercitationem non eos
+        ea in aut, minus quidem tenetur eum minima magnam dolores ipsum quod? Adipisci, nobis illo.
+    </p>
+    </br>
+
+    <h2 id="biodata">Biodata</h2>
+    <table class="table-solid">
+        <tr>
+            <th>Nama</th>
+            <th>Tempat Tanggal Lahir</th>
+            <th>Anak ke</th>
+        </tr>
+        <tr>
+            <td>Antonius Dion</td>
+            <td>Jakarta, 23 Mai 2000</td>
+            <td>2 dari 3 bersaudara</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table class="table-solid">
+        <tr>
+            <th>Nama</th>
+            <th>Tempat Tanggal Lahir</th>
+            <th>Anak ke</th>
+        </tr>
+        <tr>
+            <td>Antonius Dion</td>
+            <td>Jakarta, 23 Mai 2000</td>
+            <td>2 dari 3 bersaudara</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h2 id="riwayat">Riwayat Pendidikan</h2>
+    <ul>
+        <li>SDN Meruyung 1</li>
+        <li>SMP Cakra Nusantara</li>
+        <li>SMK Cakra Nusantara</li>
+    </ul>
+
+    <br><br><br>
+
+    <h2 id="kontak">Kontak Saya</h2>    
+    <form>
         <br>
-    </br>
+    <label for="name"></label>Nama</form>
+    <input type="text" id="name"><br><br>
 
-    <h2 id="biodata">biodata</h2>
+    <label for="email"></label>Email</form><br>
+    <input type="email" id="email"><br><br>
 
-    <h3>PENGGUNA BARU</h3>
-    </br>
-      </br>
-    </body>
+    <label for="subject"></label>Subject</form><br>
+    <input type="text" id="name"><br><br>
+
+    <label for="pesan"></label>Pesan</form><br>
+    <textarea rows="10"></textarea>
+    </form>
+
+    <br><br><br><br><br>
+
+    <h2 id="hobi">Hobi Saya</h2>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="OLAHRAGA">
+        <label for="html">Olahraga</label><br>
+        <input type="radio" id="css" name="fav_language" value="MUSIK">
+        <label for="css">Musik</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="KODING">
+        <label for="javascript">Koding</label>
+      </form>
+
+        <br>
+
+      <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="motor">
+        <label for="vehicle1"> Saya Memiliki Motor</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="mobil">
+        <label for="vehicle2"> Saya Memiliki Mobil</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="kapal">
+        <label for="vehicle3"> Saya Memiliki Sepeda</label>
+
+        <br><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <br><br><br>
+
+      <div class="content">
+        <p>Sekian Perkenalan Diri dari Saya Terimakasih</p>
+      </div>
+</body>
+
 </html>

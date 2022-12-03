@@ -1,0 +1,42 @@
+
+body{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
+input{
+    box-sizing: border-box;
+    width: 100%; 
+}
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+    
+        td,
+        th {
+    
+            text-align: left;
+            padding: 8px;
+        }
+    
+    
+    
+        .table-solid td,
+        .table-solid th {
+            border: 1px solid black
+        }
+    
+        .table-dotted td,
+        .table-dotted th {
+            border: 1px dotted black
+        }
+
+        .content{
+            background: #000
+        }
+        .content{
+            color: #fff;
+        }
